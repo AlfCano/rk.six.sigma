@@ -1,0 +1,48 @@
+<!DOCTYPE rkhelp >
+<document>
+	<!--
+		this code was generated using the rkwarddev package.
+	perhaps don't make changes here, but in the rkwarddev script instead!
+	-->
+	<title>
+		GageRR
+	</title>
+	<summary>
+	</summary>
+	<usage>
+	</usage>
+	<!--
+		<section id="sct_EDITORDE" title="EDIT OR DELETE ME">
+			EDIT OR DELETE ME
+		</section>
+	-->
+	<settings>
+		<setting id="rr_data">
+		</setting>
+		<caption id="frm_Variabls" />
+		<setting id="rr_meas">
+		</setting>
+		<setting id="rr_part">
+		</setting>
+		<setting id="rr_oper">
+		</setting>
+		<caption id="frm_Settings" />
+		<setting id="rr_sigma">
+		</setting>
+		<setting id="rr_tol">
+		</setting>
+		<setting id="rr_plot">
+		</setting>
+	</settings>
+	<!--
+		<related>
+			<ul>
+				<li>
+					<link href="rkward://rhelp/..." />
+				</li>
+			</ul>
+		</related>
+	-->
+	<technical>
+	</technical>
+</document>

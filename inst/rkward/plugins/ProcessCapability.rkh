@@ -1,0 +1,45 @@
+<!DOCTYPE rkhelp >
+<document>
+	<!--
+		this code was generated using the rkwarddev package.
+	perhaps don't make changes here, but in the rkwarddev script instead!
+	-->
+	<title>
+		Process Capability
+	</title>
+	<summary>
+	</summary>
+	<usage>
+	</usage>
+	<!--
+		<section id="sct_EDITORDE" title="EDIT OR DELETE ME">
+			EDIT OR DELETE ME
+		</section>
+	-->
+	<settings>
+		<setting id="cap_var">
+		</setting>
+		<caption id="frm_Spcfctns" />
+		<setting id="cap_lsl">
+		</setting>
+		<setting id="cap_usl">
+		</setting>
+		<setting id="cap_target">
+		</setting>
+		<setting id="cap_dist">
+		</setting>
+		<setting id="cap_save">
+		</setting>
+	</settings>
+	<!--
+		<related>
+			<ul>
+				<li>
+					<link href="rkward://rhelp/..." />
+				</li>
+			</ul>
+		</related>
+	-->
+	<technical>
+	</technical>
+</document>

@@ -1,0 +1,38 @@
+<!DOCTYPE rkplugin >
+<document>
+	<!--
+		this code was generated using the rkwarddev package.
+	perhaps don't make changes here, but in the rkwarddev script instead!
+	-->
+	<code file="AttributeAgreement.js" />
+	<help file="AttributeAgreement.rkh" />
+	<!--
+		<dependencies>
+		</dependencies>
+	-->
+	<logic>
+		<!--
+			<convert id="!edit!" sources="!edit!" mode="equals" standard="!edit!" />
+		-->
+		<!--
+			<connect governor="!edit!.state" client="!edit!.enabled" />
+		-->
+	</logic>
+	<dialog label="Attribute Agreement Analysis">
+		<row id="row_vDVLFVLFSS">
+			<varselector id="attr_selector" />
+			<column id="clm_vDVLFVLFSS">
+				<varslot id="attr_data" label="Dataframe" source="attr_selector" classes="data.frame" required="true" />
+				<frame label="Variables (Long Format)" id="frm_VrblsLnF">
+					<varslot id="attr_sample" label="Sample/Subject ID" source="attr_selector" required="true" />
+					<varslot id="attr_appr" label="Appraiser/Rater" source="attr_selector" required="true" />
+					<varslot id="attr_rating" label="Rating/Outcome" source="attr_selector" required="true" />
+				</frame>
+				<saveobject label="Save Result Object" checkable="true" checked="true" initial="attr_agreement_res" id="attr_save" />
+				<text id="txt_ClcltsFK">
+					Calculates Fleiss' Kappa for multiple raters.
+				</text>
+			</column>
+		</row>
+	</dialog>
+</document>

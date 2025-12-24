@@ -1,0 +1,132 @@
+<!DOCTYPE
+	rkpluginmap
+>
+<document
+	base_prefix=""
+	namespace="GageRandR"
+	id="GageRandR_rkward"
+	po_id="GageRandR_rkward"
+	priority="medium"
+>
+	<!--
+		this code was generated using the rkwarddev package.
+	perhaps don't make changes here, but in the rkwarddev script instead!
+	-->
+	<!--
+		<dependencies>
+		</dependencies>
+	-->
+	<about
+		name="rk.six.sigma"
+		shortinfo="An RKWard plugin for Advanced Industrial Statistics and Six Sigma. Includes Gage R&amp;R, Attribute Agreement Analysis, and Process Capability."
+		longinfo="An RKWard plugin for Advanced Industrial Statistics and Six Sigma. Includes Gage R&amp;R, Attribute Agreement Analysis, and Process Capability."
+		version="0.0.1"
+		releasedate="2025-12-23"
+		url="https://github.com/AlfCano/rk.six.sigma"
+		license="GPL (&gt;= 3)"
+	>
+		<author
+			given="Alfonso"
+			family="Cano"
+			email="alfonso.cano@correo.buap.mx"
+			role="aut, cre"
+		/>
+	</about>
+	<require
+		map="rkward::menu"
+	/>
+	<require
+		map="rkward::embedded"
+	/>
+	<components>
+		<component
+			id="cmp_GageRandRAttributeAgremnt"
+			label="Attribute Agreement"
+			type="standard"
+			file="plugins/AttributeAgreement.xml"
+		>
+		</component>
+		<component
+			id="cmp_GageRandRProcessCapabilty"
+			label="Process Capability"
+			type="standard"
+			file="plugins/ProcessCapability.xml"
+		>
+		</component>
+		<component
+			id="cmp_GageRandRGageRandR"
+			label="Gage R and R"
+			type="standard"
+			file="plugins/GageRandR.xml"
+		>
+		</component>
+	</components>
+	<hierarchy>
+		<menu
+			id="analysis"
+			label="Analysis"
+		>
+			<menu
+				id="IndustrialStats"
+				label="Industrial Stats"
+			>
+				<menu
+					id="SixSigma"
+					label="Six Sigma"
+				>
+					<entry
+						component="cmp_GageRandRAttributeAgremnt"
+					/>
+				</menu>
+			</menu>
+		</menu>
+		<menu
+			id="analysis"
+			label="Analysis"
+		>
+			<menu
+				id="IndustrialStats"
+				label="Industrial Stats"
+			>
+				<menu
+					id="SixSigma"
+					label="Six Sigma"
+				>
+					<entry
+						component="cmp_GageRandRProcessCapabilty"
+					/>
+				</menu>
+			</menu>
+		</menu>
+		<menu
+			id="analysis"
+			label="Analysis"
+		>
+			<menu
+				id="IndustrialStats"
+				label="Industrial Stats"
+			>
+				<menu
+					id="SixSigma"
+					label="Six Sigma"
+				>
+					<entry
+						component="cmp_GageRandRGageRandR"
+					/>
+				</menu>
+			</menu>
+		</menu>
+	</hierarchy>
+	<!--
+		<context
+			id="x11"
+		>
+		</context>
+	-->
+	<!--
+		<context
+			id="import"
+		>
+		</context>
+	-->
+</document>

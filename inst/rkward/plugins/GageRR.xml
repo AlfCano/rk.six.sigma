@@ -1,0 +1,40 @@
+<!DOCTYPE rkplugin >
+<document>
+	<!--
+		this code was generated using the rkwarddev package.
+	perhaps don't make changes here, but in the rkwarddev script instead!
+	-->
+	<code file="GageRR.js" />
+	<help file="GageRR.rkh" />
+	<!--
+		<dependencies>
+		</dependencies>
+	-->
+	<logic>
+		<!--
+			<convert id="!edit!" sources="!edit!" mode="equals" standard="!edit!" />
+		-->
+		<!--
+			<connect governor="!edit!.state" client="!edit!.enabled" />
+		-->
+	</logic>
+	<dialog label="Gage R&amp;R (Crossed)">
+		<row id="row_vSDVVMRPID">
+			<varselector id="rr_selector" />
+			<column id="clm_vSDVVMRPID">
+				<varslot id="rr_data" label="Study Dataframe" source="rr_selector" classes="data.frame" required="true" />
+				<frame label="Variables" id="frm_Variabls">
+					<varslot id="rr_meas" label="Measurement (Response)" source="rr_selector" required="true" />
+					<varslot id="rr_part" label="Part ID" source="rr_selector" required="true" />
+					<varslot id="rr_oper" label="Operator/Appraiser ID" source="rr_selector" required="true" />
+				</frame>
+				<frame label="Settings" id="frm_Settings">
+					<spinbox label="Sigma Multiplier (Study Var)" id="rr_sigma" initial="6" min="1" />
+					<input label="Process Tolerance (Optional, for %P/T)" id="rr_tol" />
+				</frame>
+				<checkbox id="rr_plot" label="Plot Standard R&amp;R Graphs" value="1" checked="true" />
+				<preview label="Preview" id="prv_Preview" />
+			</column>
+		</row>
+	</dialog>
+</document>

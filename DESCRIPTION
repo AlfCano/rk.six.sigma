@@ -1,0 +1,19 @@
+Package: rk.six.sigma
+Type: Package
+Title: An RKWard plugin for Advanced Industrial Statistics and Six
+        Sigma. Includes Gage R&R, Attribute Agreement Analysis, and
+        Process Capability.
+Version: 0.0.1
+Date: 2025-12-23
+Author: Alfonso Cano
+Maintainer: Alfonso Cano <alfonso.cano@correo.buap.mx>
+Enhances: rkward
+Description: An RKWard plugin for Advanced Industrial Statistics and
+        Six Sigma. Includes Gage R&R, Attribute Agreement Analysis, and
+        Process Capability.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyLoad: yes
+URL: https://github.com/AlfCano/rk.six.sigma
+Authors@R: person(given="Alfonso", family="Cano",
+        email="alfonso.cano@correo.buap.mx", role=c("aut", "cre"))
