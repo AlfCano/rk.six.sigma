@@ -40,21 +40,17 @@ This plugin relies on the following R packages:
 
 ## Installation
 
-### Method 1: Installing from Source
-If you have the `.tar.gz` source package:
+### Installing from GitHub (Recommended)
+You can install the latest version directly from GitHub using the `devtools` or `remotes` package in R:
+
+First run:
+
 ```r
-install.packages("rk.six.sigma_0.0.1.tar.gz", repos = NULL, type = "source")
+library(devtools) # or library(remotes)
+install_github("AlfCano/rk.six.sigma")
 ```
 
-### Method 2: Building from Script
-If you are running the generation script provided in RKWard:
-1.  Run the generation script.
-2.  Execute the commands printed in the console:
-    ```r
-    rk.updatePluginMessages(path=".")
-    devtools::install(".")
-    ```
-3.  Restart RKWard.
+Then restart RKWard.
 
 ## Usage Guide
 
